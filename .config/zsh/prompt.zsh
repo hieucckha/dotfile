@@ -1,0 +1,6 @@
+PROMPT="%{%B%{%F{red}%{[%}%f%b%}%{%B%{%F{white}%{%n%}%f%}%b%}%{%B%{%F{blue}%{@%}%f%}%b%}%{%B%{%F{white}%{LacDa%}%f%}%b%}%{%B%{%F{red}%{]%}%f%}%b%}%{%k%{  %}%}%(?.%{%B%{%F{green}%{➜ %}%f%b%}%}.%{%B%{%F{red}%{➜ %}%f%b%}%})%}"
+PROMPT+=" %{%F{cyan}%{%c%}%f%} "
+ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_bold[blue]%}(%{$fg[red]%}"
+ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%} "
+ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[blue]%}) %{$fg[yellow]%}✗"
+ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[blue]%})"
