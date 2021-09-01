@@ -10,7 +10,6 @@ set -g theme_hide_hostname no
 set -g theme_hostname always
 
 set -gx EDITOR "nvim"
-set -gx OPENER "open"
 
 alias cp "cp -iv"
 alias mv "mv -iv"
