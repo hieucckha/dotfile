@@ -23,8 +23,11 @@ gaps inner 8
 gaps outer 0
 
 assign [class=zoom] $ws2
-assign [class=discord] $ws3
-assign [class=mpv] $ws4
+assign [class=Org.gnome.Nautilus] $ws3
+assign [class=discord|Slack] $ws4
+assign [class=mpv] $ws5
+assign [class=qBittorrent] $ws6
+
 
 #
 # ---- Application ----
@@ -35,8 +38,7 @@ exec --no-startup-id ibus-daemon -drxR
 exec --no-startup-id flameshot &
 exec --no-startup-id picom --experimental-backends &
 exec --no-startup-id nm-applet  &
-exec --no-startup-id qbittorrent-nox &
-
+exec --no-startup-id qbittorrent &
 
 #
 # ---- App Keybinds ----
