@@ -9,14 +9,21 @@ set -g theme_display_user yes
 set -g theme_hide_hostname no
 set -g theme_hostname always
 
-set EDITOR "nvim"
+set -gx EDITOR "nvim"
+set -gx OPENER "open"
 
-alias ls "exa --grid --icons"
-alias ll "exa --long --icons"
-alias la "exa --all --long --icons"
+alias cp "cp -iv"
+alias mv "mv -iv"
+alias rm "rm -vI"
+alias mkd "mkdir -pv"
 
-# jump
-status --is-interactive; and source (jump shell fish | psub)
+alias tree "exa --tree --classify"
+alias ls "exa --grid --icons --classify"
+alias ll "exa --long --icons --classify"
+alias la "exa --all --long --icons --classify"
+
+# z
+set -U Z_CMD "j"
 
 # ibus
 export GTK_IM_MODULE=ibus
